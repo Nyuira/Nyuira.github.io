@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Peter Kanyuira — IT & Security Lead, Nairobi</title>
+<meta name="description" content="Peter Kanyuira: IT & security lead for humanitarian and development organisations. Apple and endpoint management (Jamf, Intune), Microsoft Entra ID, Defender, AWS, and data & AI. Nairobi, Kenya.">
+<meta property="og:title" content="Peter Kanyuira — IT & Security Lead">
+<meta property="og:description" content="10+ years running IT for humanitarian organisations. Jamf, Intune, Entra ID, Defender, AWS, Power BI and Python. Available for consulting.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nyuira.github.io/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: left-aligned single column (max 1080px). Hero pairs the pitch with a device-inventory record of Peter himself; the rest is quiet rows of text. */
+:root{
+  --paper:#eef1ee; --raised:#f8faf8; --ink:#16201d; --muted:#4f5c57; --rule:#cfd6d2;
+  --teal:#0d5c52; --teal-soft:#d6e7e3; --ok:#2f7d4f; --warn:#a46a0f;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"Public Sans",ui-sans-serif,system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:#121816; --raised:#19211e; --ink:#e6ece9; --muted:#9eaba6; --rule:#2c3733;
+  --teal:#6cc2b3; --teal-soft:#1d332f; --ok:#6fd19a; --warn:#e5b25a; color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+a{color:var(--teal);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+header.top{padding-block:20px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.name{font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:-.01em;color:var(--ink);text-decoration:none}
+nav{display:flex;gap:20px;flex-wrap:wrap;font-size:15px}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink)}
+
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;padding-block:56px 72px}
+.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(38px,5.4vw,64px);line-height:1.02;letter-spacing:-.025em;margin:0 0 22px;text-wrap:balance}
+.hero p.lede{font-size:19px;color:var(--muted);max-width:34em;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;font-weight:600;font-size:15px;padding:11px 18px;border-radius:999px;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink)}
+.btn.solid{background:var(--ink);color:var(--paper)}
+.btn:hover{border-color:var(--teal);color:var(--teal)}
+.btn.solid:hover{background:var(--teal);border-color:var(--teal);color:var(--paper)}
+
+/* the one bold element: an inventory record */
+.record{background:var(--raised);border:1px solid var(--rule);border-radius:14px;overflow:hidden;font-size:14px}
+.record .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-bottom:1px solid var(--rule)}
+.record .dev{font-family:var(--mono);font-weight:500;font-size:15px}
+.status{display:inline-flex;align-items:center;gap:7px;font-size:13px;color:var(--ok);font-weight:600}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ok)}
+.record dl{margin:0;padding:6px 18px 14px;display:grid;grid-template-columns:auto 1fr;column-gap:18px}
+.record dt{color:var(--muted);padding-block:7px;border-bottom:1px dashed var(--rule)}
+.record dd{margin:0;padding-block:7px;border-bottom:1px dashed var(--rule);font-family:var(--mono);font-size:13.5px;min-width:0;overflow-wrap:anywhere}
+.record dl > :nth-last-child(-n+2){border-bottom:0}
+.record .foot{padding:12px 18px;background:var(--teal-soft);color:var(--ink);font-size:13.5px}
+
+section{padding-block:64px;border-top:1px solid var(--rule)}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(28px,3.4vw,38px);letter-spacing:-.02em;line-height:1.1;margin:0 0 12px}
+.intro{color:var(--muted);max-width:40em;margin:0 0 36px}
+
+.areas{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.areas h3{font-family:var(--display);font-size:21px;margin:0 0 8px;letter-spacing:-.01em}
+.areas p{margin:0 0 10px;color:var(--muted)}
+.tools{font-size:14.5px;color:var(--ink)}
+
+.work{display:flex;flex-direction:column}
+.case{display:grid;grid-template-columns:220px 1fr;gap:32px;padding-block:28px;border-top:1px solid var(--rule)}
+.case:first-child{border-top:0;padding-top:0}
+.case .where{color:var(--muted);font-size:15px}
+.case .where strong{display:block;color:var(--ink);font-size:16px}
+.case h3{font-family:var(--display);font-size:24px;letter-spacing:-.015em;margin:0 0 8px;line-height:1.2}
+.case p{margin:0 0 12px;max-width:42em}
+.case ul{margin:0 0 12px;padding-left:20px;max-width:42em}
+.case li{margin-bottom:4px}
+.result{display:inline-block;background:var(--teal-soft);color:var(--ink);border-radius:8px;padding:6px 12px;font-size:15px;font-weight:600}
+.links{font-size:15px;display:flex;gap:18px;flex-wrap:wrap;margin-top:10px}
+
+.timeline{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.timeline li{display:grid;grid-template-columns:150px 1fr;gap:24px;padding-block:16px;border-top:1px solid var(--rule)}
+.timeline li:first-child{border-top:0}
+.timeline .yrs{font-family:var(--mono);font-size:14px;color:var(--muted);padding-top:3px;font-variant-numeric:tabular-nums}
+.timeline .role{font-weight:600}
+.timeline .org{color:var(--muted)}
+
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 48px;margin-bottom:36px}
+.services h3{font-family:var(--display);font-size:20px;margin:0 0 6px}
+.services p{margin:0;color:var(--muted)}
+.contact-box{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;background:var(--ink);color:var(--paper);border-radius:16px;padding:28px 32px}
+.contact-box p{margin:0;font-size:19px;max-width:30em}
+.contact-box .btn{border-color:var(--paper);color:var(--paper)}
+.contact-box .btn.solid{background:var(--paper);color:var(--ink)}
+.contact-box .btn:hover{border-color:var(--teal-soft);color:var(--teal-soft)}
+.contact-box .btn.solid:hover{background:var(--teal-soft);color:var(--ink)}
+
+.creds{display:grid;grid-template-columns:repeat(2,1fr);gap:36px}
+.creds h3{font-family:var(--display);font-size:20px;margin:0 0 10px}
+.creds ul{margin:0;padding-left:20px}
+.creds li{margin-bottom:6px}
+.creds .soon{color:var(--muted)}
+
+footer{border-top:1px solid var(--rule);padding-block:28px 40px;color:var(--muted);font-size:14.5px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;gap:36px;padding-block:32px 48px}
+  .areas,.services,.creds{grid-template-columns:1fr;gap:28px}
+  .case{grid-template-columns:1fr;gap:8px}
+  .timeline li{grid-template-columns:1fr;gap:2px}
+  nav{display:none}
+}
+@media (prefers-reduced-motion:no-preference){
+  .record{animation:rise .7s ease-out both .15s}
+  @keyframes rise{from{transform:translateY(10px);opacity:.001}to{transform:none;opacity:1}}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="name" href="#">Peter Kanyuira</a>
+    <nav aria-label="Sections">
+      <a href="#work">Work</a><a href="#experience">Experience</a><a href="#hire">Work with me</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h1>I keep IT running for organisations that work in hard places.</h1>
+      <p class="lede">IT and security lead in Nairobi with 10+ years across Missions of Hope International, Church World Service, Save the Children and the World Resources Institute. I manage Apple fleets, secure Microsoft identity and devices, and build the data tools that show leaders what's really going on.</p>
+      <div class="cta">
+        <a class="btn solid" href="mailto:p.kanyuira@gmail.com">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/peterkanyuira/">LinkedIn</a>
+        <a class="btn" href="https://github.com/Nyuira">GitHub</a>
+      </div>
+    </div>
+
+    <aside class="record" aria-label="Profile summary, styled as a device inventory record">
+      <div class="bar"><span class="dev">KE-KANYUIRA</span><span class="status">Managed</span></div>
+      <dl>
+        <dt>Location</dt><dd>Nairobi, Kenya (EAT)</dd>
+        <dt>Role</dt><dd>Apple Environment Lead &amp; IT Systems Analyst, WRI</dd>
+        <dt>In IT since</dt><dd>2015</dd>
+        <dt>Previously</dt><dd>IT Director, Missions of Hope Int'l</dd>
+        <dt>Platforms</dt><dd>Jamf Pro, Intune, Entra ID, Defender, AWS</dd>
+        <dt>Data stack</dt><dd>Python, Power BI, Streamlit</dd>
+        <dt>Education</dt><dd>MSc Data Science, Strathmore</dd>
+      </dl>
+      <div class="foot">Open to consulting on endpoint management, Microsoft 365 security, dashboards and data protection.</div>
+    </aside>
+  </div>
+
+  <section aria-labelledby="areas-h">
+    <h2 id="areas-h">What I work on</h2>
+    <p class="intro">Three things I do every week, and that I can do for your organisation.</p>
+    <div class="areas">
+      <div>
+        <h3>Apple and endpoint management</h3>
+        <p>Zero-touch enrollment, configuration that holds up, self-service that cuts tickets, and fixes that run without anyone filing one.</p>
+        <p class="tools">Jamf Pro, Jamf Connect, Self Service+, Apple Business Manager, Microsoft Intune</p>
+      </div>
+      <div>
+        <h3>Identity and security</h3>
+        <p>Making sure only the right people, on healthy devices, reach your data, and that you can prove it to auditors and donors.</p>
+        <p class="tools">Microsoft Entra ID, Conditional Access, Defender for Endpoint, AWS, Kenya DPA 2019, GDPR, NIST</p>
+      </div>
+      <div>
+        <h3>Data and AI</h3>
+        <p>Pipelines and dashboards that turn system data into decisions, and practical AI that answers staff questions before they become tickets.</p>
+        <p class="tools">Python, Power BI, Streamlit, Power Platform, Copilot Studio, scikit-learn</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" aria-labelledby="work-h">
+    <h2 id="work-h">Selected work</h2>
+    <p class="intro">What the problem was, what I did, and what changed.</p>
+    <div class="work">
+      <article class="case">
+        <div class="where"><strong>World Resources Institute</strong>2025 – present</div>
+        <div>
+          <h3>Modernising a global Mac fleet</h3>
+          <p>WRI's Macs serve staff across Africa, the Americas and Asia. I own the fleet end to end, and I'm moving it to a modern, low-touch model.</p>
+          <ul>
+            <li>Building zero-touch enrollment for macOS with Jamf Setup Manager, Jamf Connect and declarative Blueprints</li>
+            <li>Connecting Jamf Pro to Microsoft Entra ID and Intune device compliance, so Conditional Access can check device health</li>
+            <li>Redesigning Self Service+ as "My IT": a device-health home page, one-click fixes and automatic remediation</li>
+            <li>Built a Python pipeline on the Jamf Pro API that feeds leadership dashboards, and used sign-in data to find Macs that weren't under management</li>
+          </ul>
+          <span class="result">25% fewer SLA breaches after service-desk workflow automation</span>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="where"><strong>Strathmore University</strong>MSc thesis, 2026</div>
+        <div>
+          <h3>Teacher Readiness Index</h3>
+          <p>Kenya's Competency-Based Curriculum depends on teachers who are ready to deliver it. I built a validated survey instrument and a stacking-ensemble model that predicts readiness, then wrapped it in a dashboard that gives schools a diagnostic profile.</p>
+          <span class="result">Eight-stage pipeline: validation, modelling, ensemble, fairness checks</span>
+          <div class="links"><a href="https://github.com/Nyuira/TRI-Project">Code on GitHub</a></div>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="where"><strong>Elyon Elementaita Resort</strong>2026</div>
+        <div>
+          <h3>Website and management system for a resort</h3>
+          <p>A family resort near Lake Elementaita needed a web presence and a way to run day-to-day operations without paid software. I designed and built both: a guest-facing site, and an internal system for restaurant orders, staff and sales reporting that runs on any device size.</p>
+          <span class="result">Built with Next.js and TypeScript, deployed on Vercel</span>
+          <div class="links"><a href="https://elyon-elementaita-resort.vercel.app">Visit the site</a><a href="https://github.com/Nyuira/elyon-elementaita-resort">Code on GitHub</a></div>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="where"><strong>Save the Children</strong>Kenya &amp; Madagascar, 2023 – 2025</div>
+        <div>
+          <h3>Getting field teams to use the tools they already paid for</h3>
+          <p>Procurement and HR approvals were slow, and adoption of Microsoft tools was low. I built SharePoint and Power Automate workflows, trained staff in both countries, and set up a Kenya Data Protection Act and UK GDPR compliance framework.</p>
+          <span class="result">60% more Power Platform use; approvals 40% faster</span>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="where"><strong>Missions of Hope International</strong>IT Director, 2019 – 2021</div>
+        <div>
+          <h3>Moving 15 campuses to the cloud</h3>
+          <p>I led ICT for 15 campuses with a team of 15: the move from on-premises servers to Microsoft Azure, an ERP rollout, mobile data collection, and training for more than 300 staff.</p>
+          <span class="result">30% less downtime; 50% efficiency gain from the ERP</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="experience" aria-labelledby="exp-h">
+    <h2 id="exp-h">Experience</h2>
+    <p class="intro">From the loan office to IT Director at the same organisation, then three international NGOs.</p>
+    <ol class="timeline">
+      <li><span class="yrs">2025 – now</span><div><div class="role">Apple Environment Lead &amp; IT Systems Analyst</div><div class="org">World Resources Institute, Nairobi (global team)</div></div></li>
+      <li><span class="yrs">2023 – 2025</span><div><div class="role">Technology &amp; Data Systems Specialist</div><div class="org">Save the Children, Kenya &amp; Madagascar</div></div></li>
+      <li><span class="yrs">2021 – 2023</span><div><div class="role">IT Support Assistant, then IT Support &amp; Data Systems Analyst</div><div class="org">Church World Service, Resettlement Support Center Africa</div></div></li>
+      <li><span class="yrs">2019 – 2021</span><div><div class="role">IT Director</div><div class="org">Missions of Hope International</div></div></li>
+      <li><span class="yrs">2015 – 2018</span><div><div class="role">ICT Officer, then Systems Administrator</div><div class="org">Missions of Hope International</div></div></li>
+      <li><span class="yrs">2013 – 2015</span><div><div class="role">Loan Officer</div><div class="org">Missions of Hope International</div></div></li>
+    </ol>
+  </section>
+
+  <section id="hire" aria-labelledby="hire-h">
+    <h2 id="hire-h">Work with me</h2>
+    <p class="intro">Short, well-defined engagements for NGOs, schools and growing businesses. I work directly or through Innolex Limited, my Nairobi consultancy.</p>
+    <div class="services">
+      <div><h3>Jamf and Mac fleet health check</h3><p>A review of your Jamf Pro setup, enrollment, security settings and self-service, with a prioritised list of fixes.</p></div>
+      <div><h3>Microsoft 365 and Entra ID baseline</h3><p>MFA, Conditional Access, Intune compliance and Defender set up sensibly for a small or mid-size organisation.</p></div>
+      <div><h3>Dashboards from your own data</h3><p>Power BI or Streamlit dashboards that pull from the systems you already use, so reports stop being built by hand.</p></div>
+      <div><h3>Data protection readiness</h3><p>A practical check against the Kenya Data Protection Act 2019: what data you hold, who can reach it, and what to fix first.</p></div>
+    </div>
+    <div class="contact-box" id="contact">
+      <p>Tell me what you need, and I'll come back with a short proposal.</p>
+      <div class="cta">
+        <a class="btn solid" href="mailto:p.kanyuira@gmail.com">p.kanyuira@gmail.com</a>
+        <a class="btn" href="https://www.innolex.co.ke">Innolex Limited</a>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="creds-h">
+    <h2 id="creds-h">Education and certifications</h2>
+    <div class="creds">
+      <div>
+        <h3>Education</h3>
+        <ul>
+          <li>MSc Data Science and Analytics, Strathmore University (2026)</li>
+          <li>BSc Computer Information Systems, Kenya Methodist University</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Certifications</h3>
+        <ul>
+          <li>Oracle Database 11g Administration Certified Associate (2019)</li>
+          <li>Cisco CCNA (2017)</li>
+          <li>Cloud and Network Security, Cyber Shujaa (2024)</li>
+          <li class="soon">ITIL 4 Foundation, in progress</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Peter Kanyuira, Nairobi, Kenya</span>
+    <span><a href="https://www.linkedin.com/in/peterkanyuira/">LinkedIn</a> &nbsp; <a href="https://github.com/Nyuira">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
